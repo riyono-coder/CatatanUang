@@ -1,0 +1,23 @@
+{
+  "__version__": "1.0",
+  "collections": {
+    "transactions": {
+      "__document__": {
+        "userId": { "type": "string", "description": "The ID of the user who owns the transaction" },
+        "type": { "type": "string" },
+        "amount": { "type": "number" },
+        "categoryId": { "type": "string" },
+        "date": { "type": "string" },
+        "description": { "type": "string" },
+        "createdAt": { "type": "number" }
+      }
+    },
+    "budgets": {
+      "__document__": {
+        "userId": { "type": "string" },
+        "categoryId": { "type": "string" },
+        "monthlyLimit": { "type": "number" }
+      }
+    }
+  }
+}
